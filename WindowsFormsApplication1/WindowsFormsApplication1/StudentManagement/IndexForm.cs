@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1.StudentManagement
         }
         void grdStudents_DoubleClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+           
             if (this.grdStudents.SelectedRows.Count == 1)
             {
                 var row = this.grdStudents.SelectedRows[0];
@@ -50,7 +50,7 @@ namespace WindowsFormsApplication1.StudentManagement
 
         void btnCreate_Click(object sender, EventArgs e)
         {
-            var createForm = new IndexForm();
+            var createForm = new CreateForm();
             createForm.ShowDialog();
             this.IndexForm_Load();
         }
